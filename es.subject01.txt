@@ -5,13 +5,21 @@ Instrucciones:
 - Clonar dicho repositorio en local.
 
 - Crear una rama "<login>" en base a "main".
+git checkout -b iconejo-
 
 - Añadir un archivo que contenga el historial de commits.
+git log > History_commit.sh
+git add History_commit.txt
+git commit -m "History" 
 
 - Publicar la rama.
+git push --set-upstream origin iconejo-
 
 - Añadir los cambios de "<login>" a "main".
 
 - Buscar el archivo "Taller Git(hub).pdf" en commits anteriores
+git log -p -- "Taller Git(hub).pdf"
 
 - Traer "Taller Git(hub).pdf" al presente
+git log --oneline
+git checkout 700f845 "Taller Git(hub).pdf"
